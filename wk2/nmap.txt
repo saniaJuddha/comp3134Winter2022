@@ -1,0 +1,52 @@
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# nmap georgebrown.ca
+Starting Nmap 7.80 ( https://nmap.org ) at 2022-01-17 13:31 UTC
+Nmap scan report for georgebrown.ca (99.79.139.11)
+Host is up (0.037s latency).
+rDNS record for 99.79.139.11: ec2-99-79-139-11.ca-central-1.compute.amazonaws.com
+Not shown: 997 filtered ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 4.52 seconds
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# nmap -p 22 georgebrown.ca
+Starting Nmap 7.80 ( https://nmap.org ) at 2022-01-17 13:32 UTC
+Nmap scan report for georgebrown.ca (99.79.139.11)
+Host is up (0.038s latency).
+rDNS record for 99.79.139.11: ec2-99-79-139-11.ca-central-1.compute.amazonaws.com
+
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap done: 1 IP address (1 host up) scanned in 0.20 seconds
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# nmap -p 22-30 georgebrown.ca
+Starting Nmap 7.80 ( https://nmap.org ) at 2022-01-17 13:32 UTC
+Nmap scan report for georgebrown.ca (99.79.139.11)
+Host is up (0.037s latency).
+rDNS record for 99.79.139.11: ec2-99-79-139-11.ca-central-1.compute.amazonaws.com
+
+PORT   STATE    SERVICE
+22/tcp open     ssh
+23/tcp filtered telnet
+24/tcp filtered priv-mail
+25/tcp filtered smtp
+26/tcp filtered rsftp
+27/tcp filtered nsw-fe
+28/tcp filtered unknown
+29/tcp filtered msg-icp
+30/tcp filtered unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 1.48 seconds
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# nmap -F georgebrown.ca
+Starting Nmap 7.80 ( https://nmap.org ) at 2022-01-17 13:33 UTC
+Nmap scan report for georgebrown.ca (99.79.139.11)
+Host is up (0.037s latency).
+rDNS record for 99.79.139.11: ec2-99-79-139-11.ca-central-1.compute.amazonaws.com
+Not shown: 97 filtered ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 2.01 seconds

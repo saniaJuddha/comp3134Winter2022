@@ -1,0 +1,13 @@
+sania@DESKTOP-G2NRNVM MINGW64 ~ (main)
+$ ping georgebrown.ca
+
+Pinging georgebrown.ca [64:ff9b::634f:8b0b] with 32 bytes of data:
+Reply from 64:ff9b::634f:8b0b: time=100ms
+Reply from 64:ff9b::634f:8b0b: time=99ms
+Reply from 64:ff9b::634f:8b0b: time=98ms
+
+Ping statistics for 64:ff9b::634f:8b0b:
+    Packets: Sent = 3, Received = 3, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 98ms, Maximum = 100ms, Average = 99ms
+Control-C

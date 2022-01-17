@@ -1,0 +1,23 @@
+YORK UNIVERSITY
+IP Address: 130.63.236.137
+Geolocation: CA (Canada), ON, Ontario, M3J Toronto - Google Maps
+
+
+FACEBOOK.CA
+IP Address: 31.13.71.1
+Geolocation: IE (Ireland), N/A, N/A, N/A N/A - Google Maps
+
+
+NIKE.CA
+IP Address: 54.230.162.26
+Geolocation: US (United States), WA, Washington, 98108 Seattle - Google Maps
+
+
+GOOGLE.COM
+IP Address: 142.250.80.46
+Geolocation: US (United States), CA, California, 94043 Mountain View - Google Maps
+
+
+SWIGGY.COM
+IP Address: 52.220.150.172
+Geolocation: SG (Singapore), 00, N/A, N/A Singapore - Google Maps
