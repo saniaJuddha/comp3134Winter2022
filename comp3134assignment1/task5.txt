@@ -1,0 +1,19 @@
+//Task 5
+
+//> Determine route from your local machine to the company’s network machine
+//> To determine the route between our host and the target server, we use the 'traceroute' cmd
+
+traceroute to 50.87.146.7 (50.87.146.7), 30 hops max, 60 byte packets
+ 1  * * *
+ 2  10.78.5.93 (10.78.5.93)  1.381 ms 10.78.5.115 (10.78.5.115)  1.421 ms 10.78.5.125 (10.78.5.125)  9.714 ms
+ 3  138.197.249.90 (138.197.249.90)  1.666 ms 138.197.249.86 (138.197.249.86)  12.324 ms  1.728 ms
+ 4  toro-b1-link.ip.twelve99.net (62.115.9.209)  1.912 ms toro-b1-link.ip.twelve99.net (62.115.55.29)  1.895 ms toro-b1-link.ip.twelve99.net (62.115.9.209)  1.878 ms
+ 5  level3-ic-361864-toro-b3.ip.twelve99-cust.net (213.248.94.123)  15.894 ms  15.880 ms  15.863 ms
+ 6  ae2.3602.edge8.Denver1.level3.net (4.69.219.74)  59.598 ms  58.291 ms  58.248 ms
+ 7  THE-ENDURAN.edge8.Denver1.Level3.net (4.53.7.174)  51.863 ms  51.800 ms  51.530 ms
+ 8  69-195-64-111.unifiedlayer.com (69.195.64.111)  46.914 ms 69-195-64-113.unifiedlayer.com (69.195.64.113)  46.896 ms  45.940 ms
+ 9  po99.prv-leaf1a.net.unifiedlayer.com (162.144.240.127)  47.074 ms po99.prv-leaf1b.net.unifiedlayer.com (162.144.240.135)  46.466 ms  46.402 ms
+10  50-87-146-7.unifiedlayer.com (50.87.146.7)  56.206 ms  46.120 ms  46.116 ms
+
+//> From the output we can see the route to the target machine
+//> We note that there are around (30) hops preformed  

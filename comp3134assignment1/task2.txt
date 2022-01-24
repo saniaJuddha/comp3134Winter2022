@@ -1,0 +1,35 @@
+// Task 2
+
+//> Number of Employees
+
+- (11) fulltime employees
+- upto (50) during seasonal 
+
+//> CEO
+
+- (Minerva Camarena) is the sole owner of LV Clean Co
+- She is a graduate of Francisco Gavidia University in San Salvador, El Salvador (1999-2005)
+- She holds a BA in Educational Science with a major in English Language Teaching
+- Her birthday is August 11th
+
+//> CFO
+
+- Sole Proprietorship (See CEO)
+
+//> President
+
+- Sole Proprietorship (See CEO)
+
+//> Current Job Postings
+
+- There are (NO current job postings)
+- When available, jobs are posted through the main twitter account, locally on craigslist, and through indeed
+
+//> Headquarters
+
+- Headquarters at (150 East Liberty St Toronto, ON, Canada M6K3R5)
+
+//> Sources
+
+https://ca.linkedin.com/company/lv-clean-co-
+https://www.linkedin.com/in/minerva-camarena-43178326

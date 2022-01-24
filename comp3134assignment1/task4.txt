@@ -1,0 +1,20 @@
+// Task 4
+
+//> Verify that the server can communicate with another computer or network
+//> To confirm that the system can communicate we send a ping and append the output to this file.
+
+PING 50.87.146.7 (50.87.146.7) 56(84) bytes of data.
+64 bytes from 50.87.146.7: icmp_seq=1 ttl=45 time=46.9 ms
+64 bytes from 50.87.146.7: icmp_seq=2 ttl=45 time=46.2 ms
+64 bytes from 50.87.146.7: icmp_seq=3 ttl=45 time=47.7 ms
+64 bytes from 50.87.146.7: icmp_seq=4 ttl=45 time=45.9 ms
+64 bytes from 50.87.146.7: icmp_seq=5 ttl=45 time=46.1 ms
+64 bytes from 50.87.146.7: icmp_seq=6 ttl=45 time=60.8 ms
+64 bytes from 50.87.146.7: icmp_seq=7 ttl=45 time=46.0 ms
+
+--- 50.87.146.7 ping statistics ---
+8 packets transmitted, 7 received, 12.5% packet loss, time 7010ms
+rtt min/avg/max/mdev = 45.915/48.510/60.764/5.035 ms
+
+//> The output shows us that the server is live and that it is able to communicate.
+

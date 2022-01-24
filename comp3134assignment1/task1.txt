@@ -1,0 +1,121 @@
+//Task 1
+
+//> I begin by preforming an 'nslookup' cmd to reverse dns search the given domain.
+//> nslookup lvclean.ca
+
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+Name:	lvclean.ca
+Address: 50.87.146.7
+
+//> Next I preform an 'nmap' search using the following scripts
+//> -sC / Runs the default nmap scripts
+//> -sV / Enumerate versions
+//> I then pipe the appended output into this file
+//> nmap -sC -sV 50.87.146.7 >> task1.txt
+
+Starting Nmap 7.80 ( https://nmap.org ) at 2022-01-24 14:27 UTC
+Nmap scan report for 50-87-146-7.unifiedlayer.com (50.87.146.7)
+Host is up (0.048s latency).
+Not shown: 984 closed ports
+PORT     STATE    SERVICE     VERSION
+21/tcp   open     ftp         Pure-FTPd
+| ssl-cert: Subject: commonName=*.hostgator.com
+| Subject Alternative Name: DNS:*.hostgator.com, DNS:hostgator.com
+| Not valid before: 2021-08-31T00:00:00
+|_Not valid after:  2022-08-31T23:59:59
+|_ssl-date: 2022-01-24T14:28:13+00:00; 0s from scanner time.
+22/tcp   open     ssh         OpenSSH 5.3 (protocol 2.0)
+| ssh-hostkey: 
+|_  1024 d5:5f:b5:05:51:e5:5b:98:6c:4c:10:2c:1c:c5:23:d2 (DSA)
+25/tcp   open     smtp        Exim smtpd 4.94.2
+|_smtp-commands: Couldn't establish connection on port 25
+| ssl-cert: Subject: commonName=*.hostgator.com
+| Subject Alternative Name: DNS:*.hostgator.com, DNS:hostgator.com
+| Not valid before: 2021-08-31T00:00:00
+|_Not valid after:  2022-08-31T23:59:59
+26/tcp   open     smtp        Exim smtpd 4.94.2
+|_smtp-commands: Couldn't establish connection on port 26
+53/tcp   open     domain      ISC BIND 9.8.2rc1 (RedHat Enterprise Linux 6)
+| dns-nsid: 
+|_  bind.version: 9.8.2rc1-RedHat-9.8.2-0.68.rc1.el6_10.1
+80/tcp   open     http        Apache httpd
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: Apache
+| http-title: 404 Error
+|_Requested resource was /404.html
+|_http-trane-info: Problem with XML parsing of /evox/about
+110/tcp  open     pop3        Dovecot pop3d
+|_pop3-capabilities: PIPELINING RESP-CODES CAPA AUTH-RESP-CODE UIDL STLS USER SASL(PLAIN LOGIN) TOP
+| ssl-cert: Subject: commonName=*.hostgator.com
+| Subject Alternative Name: DNS:*.hostgator.com, DNS:hostgator.com
+| Not valid before: 2021-08-31T00:00:00
+|_Not valid after:  2022-08-31T23:59:59
+|_ssl-date: 2022-01-24T14:28:13+00:00; 0s from scanner time.
+143/tcp  open     imap        Dovecot imapd
+|_imap-capabilities: IMAP4rev1 LOGIN-REFERRALS AUTH=PLAIN STARTTLS AUTH=LOGINA0001 IDLE listed NAMESPACE ID OK SASL-IR Pre-login more have post-login capabilities ENABLE LITERAL+
+| ssl-cert: Subject: commonName=*.hostgator.com
+| Subject Alternative Name: DNS:*.hostgator.com, DNS:hostgator.com
+| Not valid before: 2021-08-31T00:00:00
+|_Not valid after:  2022-08-31T23:59:59
+|_ssl-date: 2022-01-24T14:28:14+00:00; 0s from scanner time.
+443/tcp  open     ssl/http    Apache httpd
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: Apache
+| http-title: 404 Error
+|_Requested resource was /404.html
+|_http-trane-info: Problem with XML parsing of /evox/about
+| ssl-cert: Subject: commonName=*.hostgator.com
+| Subject Alternative Name: DNS:*.hostgator.com, DNS:hostgator.com
+| Not valid before: 2021-08-31T00:00:00
+|_Not valid after:  2022-08-31T23:59:59
+465/tcp  open     tcpwrapped
+| smtp-commands: gator3003.hostgator.com Hello 50-87-146-7.unifiedlayer.com [159.89.118.73], SIZE 52428800, 8BITMIME, PIPELINING, PIPE_CONNECT, AUTH PLAIN LOGIN, HELP, 
+|_ Commands supported: AUTH HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP 
+|_ssl-date: 2022-01-24T14:28:12+00:00; 0s from scanner time.
+587/tcp  open     tcpwrapped
+| smtp-commands: gator3003.hostgator.com Hello 50-87-146-7.unifiedlayer.com [159.89.118.73], SIZE 52428800, 8BITMIME, PIPELINING, PIPE_CONNECT, AUTH PLAIN LOGIN, STARTTLS, HELP, 
+|_ Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP 
+993/tcp  open     ssl/imap    Dovecot imapd
+|_imap-capabilities: IMAP4rev1 LOGIN-REFERRALS AUTH=PLAIN AUTH=LOGINA0001 IDLE listed NAMESPACE ID OK LITERAL+ Pre-login more have post-login capabilities ENABLE SASL-IR
+| ssl-cert: Subject: commonName=*.hostgator.com
+| Subject Alternative Name: DNS:*.hostgator.com, DNS:hostgator.com
+| Not valid before: 2021-08-31T00:00:00
+|_Not valid after:  2022-08-31T23:59:59
+|_ssl-date: 2022-01-24T14:28:12+00:00; 0s from scanner time.
+995/tcp  open     ssl/pop3    Dovecot pop3d
+|_pop3-capabilities: CAPA PIPELINING AUTH-RESP-CODE RESP-CODES UIDL USER SASL(PLAIN LOGIN) TOP
+| ssl-cert: Subject: commonName=*.hostgator.com
+| Subject Alternative Name: DNS:*.hostgator.com, DNS:hostgator.com
+| Not valid before: 2021-08-31T00:00:00
+|_Not valid after:  2022-08-31T23:59:59
+|_ssl-date: 2022-01-24T14:28:12+00:00; 0s from scanner time.
+2222/tcp open     ssh         OpenSSH 5.3 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 d5:5f:b5:05:51:e5:5b:98:6c:4c:10:2c:1c:c5:23:d2 (DSA)
+|_  2048 6e:d9:99:79:bd:f5:81:62:30:24:9e:58:6f:1f:c3:07 (RSA)
+2525/tcp filtered ms-v-worlds
+3306/tcp open     mysql       MySQL 5.6.41-84.1
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.6.41-84.1
+|   Thread ID: 30491985
+|   Capabilities flags: 65535
+|   Some Capabilities: SupportsTransactions, Speaks41ProtocolOld, DontAllowDatabaseTableColumn, Support41Auth, IgnoreSigpipes, SupportsCompression, SwitchToSSLAfterHandshake, FoundRows, InteractiveClient, Speaks41ProtocolNew, IgnoreSpaceBeforeParenthesis, SupportsLoadDataLocal, LongPassword, ConnectWithDatabase, LongColumnFlag, ODBCClient, SupportsMultipleResults, SupportsAuthPlugins, SupportsMultipleStatments
+|   Status: Autocommit
+|   Salt: ."^5+u27ZAsC2nVB)Ea8
+|_  Auth Plugin Name: mysql_native_password
+Service Info: Host: gator3003.hostgator.com; OS: Linux; CPE: cpe:/o:redhat:enterprise_linux:6
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 42.91 seconds
+
+**************************************************************************************************
+*********************************************CONCLUSION*******************************************
+**************************************************************************************************
+
+//> The results of the nmap scan show that both port 80 (HTTP) and port 443 (HTTPS) are open.

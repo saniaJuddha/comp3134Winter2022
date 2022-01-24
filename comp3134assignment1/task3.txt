@@ -1,0 +1,13 @@
+// Task 3
+
+//> Output the domain registration and hosting information
+
+Domain Name: lvclean.ca
+Registry Domain ID: 11601862-CIRA
+Registrar WHOIS Server: whois.ca.fury.ca
+Registrar URL: www.wildwestdomains.com
+Registrar: Wild West Domains Canada, Inc.
+Name Server: ns6005.hostgator.com
+Name Server: ns6006.hostgator.com
+DNSSEC: unsigned
+
