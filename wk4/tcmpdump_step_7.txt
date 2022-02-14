@@ -1,0 +1,15 @@
+root@lamponubuntu2004-s-1vcpu-1gb-tor1-01:~# tcpdump -r 0001.pcap
+reading from file 0001.pcap, link-type EN10MB (Ethernet)
+17:12:38.329184 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > 50.101.85.188.58534: Flags [P.], seq 1166300864:1166300908, ack 3038840069, win 501, length 44
+17:12:38.329401 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > 50.101.85.188.58534: Flags [P.], seq 44:152, ack 1, win 501, length 108
+17:12:38.329536 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > 50.101.85.188.58534: Flags [P.], seq 152:188, ack 1, win 501, length 36
+17:12:38.332987 IP 50.101.85.188.58534 > lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 152, win 514, length 0
+17:12:38.332987 IP 50.101.85.188.58534 > lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 188, win 514, length 0
+17:12:42.758707 IP 211.115.228.179.40347 > lamponubuntu2004-s-1vcpu-1gb-tor1-01.telnet: Flags [S], seq 2769741074, win 28181, length 0
+17:12:49.301411 IP 206.189.26.201.16823 > lamponubuntu2004-s-1vcpu-1gb-tor1-01.8000: UDP, length 44
+17:12:53.074031 IP f.77.83.36.46.outlook.fxtsport.com.41588 > lamponubuntu2004-s-1vcpu-1gb-tor1-01.3391: Flags [S], seq 145445355, win 1024, length 0
+17:13:02.111875 IP 45.146.166.124.54752 > lamponubuntu2004-s-1vcpu-1gb-tor1-01.20136: Flags [S], seq 3538226572, win 1024, length 0
+17:13:05.356480 IP hippie.000000444422222.rbz.61953 > lamponubuntu2004-s-1vcpu-1gb-tor1-01.24000: Flags [S], seq 1584654487, win 1024, length 0
+17:13:08.778711 IP 208.78.41.74.48737 > lamponubuntu2004-s-1vcpu-1gb-tor1-01.11095: Flags [S], seq 2672210246, win 64240, options [mss 1326,sackOK,TS val 879856064 ecr 0,nop,wscale 7], length 0
+17:13:12.996867 IP vds2191370.my-ihor.ru.5066 > lamponubuntu2004-s-1vcpu-1gb-tor1-01.5080: UDP, length 411
+17:13:15.567533 IP 194.26.29.195.55300 > lamponubuntu2004-s-1vcpu-1gb-tor1-01.5214: Flags [S], seq 3084049961, win 1024, length 0
